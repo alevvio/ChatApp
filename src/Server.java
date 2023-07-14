@@ -23,7 +23,7 @@ public class Server extends JFrame implements ActionListener {
 
         back.addMouseListener(new MouseAdapter(){
             public void mouseClicked(MouseEvent ae){
-                setVisible(false);
+                System.exit(0);;
             }
         });
 
