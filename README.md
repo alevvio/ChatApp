@@ -9,7 +9,7 @@ A desktop application built using JAVA's SWING and AWT GUI interfaces and chat f
 
 ## Features
 
-- uses Spring as the application framework
+- uses Swing as the application framework
 - Real-time communication between a client and a server using java.net
 - Program can be exited by using the back button
 
