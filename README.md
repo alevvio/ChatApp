@@ -3,6 +3,7 @@
 
 A desktop application built using JAVA's SWING and AWT GUI interfaces and chat feature implemented using socket programming
 
+![Example](https://github.com/alevvio/ChatApp/assets/106387661/49f99b0f-239a-479e-9987-c588f127ac35)
 
 
 
