@@ -1,3 +1,5 @@
+package GroupChatPackage;
+
 import java.util.*;
 import java.net.ServerSocket;
 import java.io.BufferedReader;
