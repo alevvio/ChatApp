@@ -26,15 +26,17 @@ public class Server implements Runnable {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+            
             client.add(writer);
+            
             while(true){
-                String data=reader.readLine();
+                String data=reader.readLine().trim();
                 System.out.println("Received" + data);
 
                 for(int i=0; i<client.size(); i++){
                     try {
                         BufferedWriter bw = (BufferedWriter)client.get(i);
-                        bw.write(i);
+                        bw.write(data);
                         bw.write("\r\n");
                         bw.flush();
                     } catch (Exception e) {
@@ -43,7 +45,7 @@ public class Server implements Runnable {
                 }
             }
         } catch (Exception e) {
-            // TODO: handle exception
+            e.printStackTrace();
         }
     }
 
